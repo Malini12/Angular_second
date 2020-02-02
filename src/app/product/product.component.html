@@ -1,0 +1,6 @@
+<a [routerLink]="['/holder/create']">create</a>
+<ul>
+    <li *ngFor = "let product of productDetail ">{{product.productName}}-{{product.price}}-
+        <img [src]="product.image">
+    </li>
+</ul>

@@ -1,0 +1,20 @@
+<button [routerLink]="['/holder/create']">create</button>
+<table class="table table-striped">
+      <thead>
+            <tr>
+              <th scope="col">productno</th>
+              <th scope="col">name</th>
+              <th scope="col">price</th>
+             </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let value of values">
+          <td>{{value.productno}}</td>
+          <td>{{value.name}}</td>
+          <td>{{value.price}}</td>
+          <button>edit</button>
+        </tr>
+      </tbody>
+      <br>
+    </table>
+   
